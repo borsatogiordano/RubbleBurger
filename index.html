@@ -18,25 +18,23 @@
 </head>
 
 <body>
-    <header>
-        <img class="logo" alt="" src="./img/logo.png">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#">Burgers</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Localização</a></li>
-            </ul>
-        </nav>
-
-    </header>
     <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <img class="logo" alt="" src="./img/logo.png">
+                    </li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Burgers</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
 
-
-        <div class="first-screen" id="home">
-            <div class="write-banner">
-                <div>
-
+        </header>
+        <section class="screen" id="home">
+            <article class="write-banner">
+                <section>
                     <h1>
                         Rubble Gourmet Burger
                     </h1>
@@ -65,17 +63,106 @@
                         especial e
                         que carrega sua essência em cada hambúrguer servido.
                     </p>
+                </section>
+            </article>
+            <figure class="img-banner">
+                <img src="./img/banner.jpg" alt="">
+            </figure>
+        </section>
+        <section class="menu" id="menu">
+            <div class="square">
+                <h3>MENU</h3>
+                <article class="menu-div">
+                    <figure>
+                        <img id="classic-img" src="./img/first burger.jpg" alt="">
+                    </figure>
+                    <div>
+                        <h4>
+                            RUBBLE CLASSIC
+                        </h4>
+                        <p>
+                            Smash angus de 90g, coberto com queijo cheddar derretido, alface fresca, tomate suculento,
+                            cebola roxa e nosso delicioso molho especial, tudo servido em um pão brioche macio e
+                            dourado.
+                        </p>
+                    </div>
+                </article>
+                <article class="menu-div">
+                    <div>
+                        <h4>
+                            AMERICAN BULLDOG
+                        </h4>
+                        <p>
+                            Smash Angus de 90g, queijo muçarela derretido, picles suculentos, cebola roxa fresca, alface
+                            crocante e ketchup, tudo cuidadosamente envolvido em um pão brioche macio. Uma explosão de
+                            sabores tradicionais em cada mordida.
+                        </p>
+                    </div>
+                    <figure>
+                        <img id="american-img" src="./img/second burger.jpg">
+                    </figure>
+                </article>
+                <article class="menu-div">
+                    <figure>
+                        <img id="ranch" src="./img/third burger.jpg">
+                    </figure>
+                    <div>
+                        <h4>
+                            BULLDOG RANCH
+                        </h4>
+                        <p>
+                            Blend de costela de 120g, coberto com queijo muçarela derretido, picles crocantes para um
+                            toque de frescor, cebola no shoyu para um sabor agridoce, tudo finalizado com nosso
+                            irresistível molho ranch, servido em um pão brioche macio.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="ask-online" id="contact">
+            <form action="">
+
+                <legend>Peça agora mesmo</legend>
+                <div class="form-item">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
-            </div>
-            <div class="img-banner">
-                <img src="./img/first-banner.jpg" alt="">
-            </div>
-        </div>
+                <div class="form-item">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+                <div class="form-item">
+                    <label for="telephone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telfone">
+                </div>
+                <div class="form-item">
+                    <label for="burger-select"></label>
+                    <select id="burger-select">
+                        <option value="classic">RUBBLE CLASSIC</option>
+                        <option value="american">AMERICAN BULLDOG</option>
+                        <option value="ranch">BULLDOG RANCH</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                   <div>
+                       <label>Método de Pagamento:</label>
+                   </div>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" required>
+                    <label for="cartao">Cartão de Crédito</label><br>
+                    <input type="radio" id="dinheiro" name="pagamento" value="dinheiro" required>
+                    <label for="dinheiro">Dinheiro</label><br>
+                    <input type="radio" id="pix" name="pagamento" value="pix" required>
+                    <label for="pix">Pix</label>
+                </div>
+                <div class="form-item">
+                    <label for="instrucoes">Instruções Especiais:</label>
+                    <textarea id="instrucoes" name="instrucoes" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar Pedido</button>
 
+            </form>
+        </section>
 
-        <div>
-
-        </div>
     </div>
 </body>
 
