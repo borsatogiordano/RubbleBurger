@@ -32,7 +32,8 @@ header {
 }
 
 .navbar ul li {
-    padding: 140px;
+    padding: 20px;
+    /* Reduzi o padding para ser mais responsivo */
 }
 
 .navbar ul li a {
@@ -54,6 +55,8 @@ header {
     height: 100vh;
     background: linear-gradient(#000, #0e0e0e, #181818);
     padding: 1rem;
+    text-align: center;
+    /* Centralizar texto no mobile */
 }
 
 .write-banner section {
@@ -63,13 +66,6 @@ header {
     justify-content: center;
     border-radius: 32px;
     padding: 1rem;
-}
-
-.write-banner h1,
-h2,
-p {
-    padding: 1rem;
-    text-align: justify;
 }
 
 .write-banner h1 {
@@ -90,7 +86,6 @@ p {
     margin-top: 40px;
     font-family: "Roboto", sans-serif;
     color: #FAC571;
-    font-weight: 300;
     font-weight: bolder;
 }
 
@@ -145,6 +140,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    /* Adicionado para responsividade */
 }
 
 .menu-div figure {
@@ -183,7 +180,6 @@ p {
     margin-top: 10px;
     color: #5b5b5b;
 }
-
 
 #classic-img {
     width: 100%;
@@ -240,14 +236,15 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     margin-bottom: 15px;
 }
+
 .form-item label {
     font-size: 1.2em;
     font-weight: bold;
     margin-right: 10px;
 }
+
 .form-item input[type="text"],
 .form-item input[type="tel"],
 .form-item select,
@@ -282,4 +279,121 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #065704;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .navbar ul li a {
+        font-size: 28px;
+    }
+
+    .navbar ul li {
+        padding: 100px;
+    }
+
+    .write-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .write-banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .menu-div figure {
+        width: 500px;
+        height: 280px;
+    }
+
+    .menu-div div h4 {
+        font-size: 40px;
+    }
+
+    .menu-div div p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        padding: 20px;
+    }
+
+    .navbar ul li a {
+        font-size: 24px;
+    }
+
+    .write-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .write-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .img-banner img {
+        width: 80vw;
+        height: 450px;
+    }
+
+    .menu-div figure {
+        width: 400px;
+        height: 220px;
+    }
+
+    .menu-div div h4 {
+        font-size: 32px;
+    }
+
+    .menu-div div p {
+        font-size: 12px;
+    }
+
+    .ask-online {
+        height: auto;
+        padding: 20px;
+    }
+
+    .ask-online form {
+        padding: 10px;
+    }
+
+    .form-item input[type="text"],
+    .form-item input[type="tel"],
+    .form-item select,
+    .form-item textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .write-banner h1 {
+        font-size: 2rem;
+    }
+
+    .write-banner h2 {
+        font-size: 1.2rem;
+    }
+
+    .write-banner p {
+        font-size: 1.2rem;
+    }
+
+    .img-banner img {
+        width: 90vw;
+        height: 350px;
+    }
+
+    .menu-div figure {
+        width: 300px;
+        height
+    }
+
 }
